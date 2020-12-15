@@ -9,6 +9,7 @@ public class OddEvenSum {
 		int oddSum=0;
 		int evenSum=0;
 		int num=low;
+		int absDiff;
 		while(num<=upper)
 		{
 			if(num%2==0) {
@@ -19,6 +20,8 @@ public class OddEvenSum {
 			}
 		num++;
 		}
+		absDiff = (oddSum > evenSum) ? oddSum - evenSum : evenSum - oddSum;
+		System.out.println(absDiff);
 		System.out.println(evenSum);
 		System.out.println(oddSum);
 }
