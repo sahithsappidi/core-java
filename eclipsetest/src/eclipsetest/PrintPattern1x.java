@@ -11,13 +11,17 @@ public class PrintPattern1x {
 		rowsize=sc.nextInt();
 		System.out.println("enter col size");
 		colsize=sc.nextInt();
+		int num=1;
 		
-		for(int row=rowsize;row>=1;row--) {
-			for(int col=colsize;col>=1;col--) {
-				System.out.print(" " + row*col);
+		for(int row=1;row<=rowsize;row++) {
+			for(int col=1;col<=row;col++) {
+				//num=num+1;
+				System.out.print(" ");
 				
 			}
-			colsize--;
+			row=rowsize-1;
+			//num++;
+			//colsize--;
 			System.out.println();
 		}
 		sc.close();
